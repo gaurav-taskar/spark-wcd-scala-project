@@ -2,7 +2,7 @@ name: Scala CI
 
 on:
    push:
-      branches: [main]
+      branches: [master]
    pull request:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
      steps:
      - uses: actions/checkout@v2
      - name: Setup Scala utils
-        uses: oldfurpg/setup-scala@v11
+        uses: olafurpg/setup-scala@v11
         with:
            java-versions: adopt@1.8
     - name: Build and Test and Validate
